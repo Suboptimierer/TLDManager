@@ -34,9 +34,12 @@ For more information check the [Apple Developer Documentation](https://developer
 // Import the TLDManager module
 import TLDManager
 
-// Access all static constants
-let version = TLDManager.version            // # Version 2022070600, Last Updated Wed Jul  6 07:07:01 2022 UTC
-let tlds = TLDManager.allValidTLDs          // ["AAA", "AARP", "ABARTH", "ABB", "ABBOTT", "ABBVIE", "ABC", "ABLE", ...]
+// Access the static properties...
+let _ = TLDManager.version                          // # Version 2022070600, Last Updated Wed Jul  6 07:07:01 2022 UTC
+let _ = TLDManager.allValidTLDsUppercased           // ["AAA", "AARP", "ABARTH", "ABB", "ABBOTT", "ABBVIE", "ABC", ...]
+let _ = TLDManager.allValidTLDsUppercasedWithDots   // [".AAA", ".AARP", ".ABARTH", ".ABB", ".ABBOTT", ".ABBVIE", ".ABC", ...]
+let _ = TLDManager.allValidTLDsLowercased           // ["aaa", "aarp", "abarth", "abb", "abbott", "abbvie", "abc", ...]
+let _ = TLDManager.allValidTLDsLowercasedWithDots   // [".aaa", ".aarp", ".abarth", ".abb", ".abbott", ".abbvie", ".abc", ...]
 ```
 
 ## Source
